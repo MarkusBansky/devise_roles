@@ -1,11 +1,14 @@
 require "devise_roles/version"
+require 'rails/all'
 
 module DeviseRoles
-  def self.available_for_user_role(user_role_name, current_user, user_redirect_path)
-    if current_user.role.name != user_role_name
-      redirect_to user_redirect_path, alert: "You should be #{user_role_name} to view that page!"
-    end
+
+  def self.user_is(user_role_name, current_user)
+    return current_user.role.name == user_role_name
   end
 
+  def self.user_not(user_role_name, current_user)
+    return current_user.role.name != user_role_name
+  end
 
 end

@@ -22,12 +22,7 @@ Or install it yourself as:
 
     $ gem install devise_roles
 
-Also you need to include it in your Application
-
-In your **application.rb** add This
-```ruby
-config.autoload_paths += %W(#{config.root}/lib)
-```
+Also you need to require it in your Application.
 You can create and initializer and add next line to it, or just write at top of your controllers
 ```ruby
 require 'encryption/encryption'
@@ -84,21 +79,39 @@ Now you can go to learn methods for this *gem*.
 
 Here is a list of available methods.
 
-#### Enable only for Role
-
-If you want to enable some page for exact Role only, use this method
+#### user_is
+To check if user role is what you want use
 ```ruby
-    DeviseRoles.available_for_user_role(user_role_name, current_user, user_redirect_path)
+    DeviseRoles.user_is(user_role_name, current_user)
 ```
 Here is some example how to use it
 ```ruby
 def some_controller_method_name
-  # Implement it at the top
-  # In this example, current view would be available for admins only
-  DeviseRoles.available_for_user_role('admin', current_user, root_path)
+  # Some other code ...
+
+  if DeviseRoles.user_is('admin', current_user)
+    # Everything is ok!
+  end
 
   # Some other code ...
-  # That would be run if user is not **admin**
+end
+```
+
+#### user_not
+Also there is an opposite method
+```ruby
+    DeviseRoles.user_not(user_role_name, current_user)
+```
+Here is some example how to use it
+```ruby
+def some_controller_method_name
+  # Some other code ...
+
+  if DeviseRoles.user_not('admin', current_user)
+    # User is NOT **admin** !!!
+  end
+
+  # Some other code ...
 end
 ```
 
