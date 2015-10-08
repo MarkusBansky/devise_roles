@@ -28,7 +28,7 @@ In your **application.rb** add This
 ```ruby
     require 'encryption/encryption'
 ```
-and inside Application block
+You can create and initializer and add next line to it, or just write at top of your controllers
 ```ruby
 config.autoload_paths += %W(#{config.root}/lib)
 ```
