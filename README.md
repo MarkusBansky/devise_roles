@@ -1,6 +1,8 @@
 # DeviseRoles::Gem
 [![Gem Version](https://badge.fury.io/rb/devise_roles.svg)](https://badge.fury.io/rb/devise_roles)
 
+[![Build Status](https://travis-ci.org/MarkusBansky/devise_roles.svg?branch=master)](https://travis-ci.org/MarkusBansky/devise_roles)
+
 Gem that helps you to organaize your users with roles and manipulate them.
 
 And you are on its HOMEPAGE.
