@@ -1,5 +1,11 @@
 # DeviseRoles::Gem
 
+Gem that helps you to organaize your users with roles and manipulate them.
+
+And you are on its HOMEPAGE.
+
+This gem is currently in development, so if you find any issues please report.
+
 ## Installation
 
 Add this line to your application's Gemfile:

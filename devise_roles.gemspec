@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["benovskym@gmail.com"]
 
   spec.summary       = %q{A simple gem for devise roles.}
-  spec.description   = %q{Gem that helps you to organaize your users with roles and manipulate them.}
+  spec.description   = %q{Gem that helps you to organaize your users with roles and manipulate them. Visit HOMEPAGE for more information how to use this gem.}
   spec.homepage      = "https://github.com/MarkusBansky/devise_roles"
   spec.license       = "MIT"
 
