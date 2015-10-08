@@ -6,4 +6,4 @@ rvm:
   - 2.1.6
 addons:
   code_climate:
-    repo_token: b8c31fac9a3471db4fdca87639414e3fd639ac638f82b7dbd4f322796f277f4a
+    repo_token: b8c31fac9a3471db4fdca87639414e3fd639ac638f82b7dbd4f322796f277f4a bundle exec rake
