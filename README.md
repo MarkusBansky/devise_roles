@@ -1,4 +1,5 @@
 # DeviseRoles::Gem
+[![Gem Version](https://badge.fury.io/rb/devise_roles.svg)](https://badge.fury.io/rb/devise_roles)
 
 Gem that helps you to organaize your users with roles and manipulate them.
 
@@ -25,7 +26,7 @@ Or install it yourself as:
 Also you need to require it in your Application.
 You can create and initializer and add next line to it, or just write at top of your controllers
 ```ruby
-require 'encryption/encryption'
+require 'devise_roles'
 ```
 
 ## Pre set up
