@@ -22,10 +22,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install devise_roles
-
 Also you need to require it in your Application.
 You can create and initializer and add next line to it, or just write at top of your controllers
 ```ruby
