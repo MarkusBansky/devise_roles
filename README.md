@@ -80,39 +80,27 @@ Now you can go to learn methods for this *gem*.
 Here is a list of available methods.
 
 #### user_is
-To check if user role is what you want use
-```ruby
-    DeviseRoles.user_is(user_role_name, current_user)
-```
+Use this to check if user has the role you need.
 Here is some example how to use it
 ```ruby
-def some_controller_method_name
-  # Some other code ...
-
-  if DeviseRoles.user_is('admin', current_user)
-    # Everything is ok!
-  end
-
-  # Some other code ...
+if DeviseRoles.user_is('admin', current_user)
+  # Everything is ok!
 end
 ```
 
 #### user_not
-Also there is an opposite method
+Also there is an opposite method.
+Here is one more example
 ```ruby
-    DeviseRoles.user_not(user_role_name, current_user)
-```
-Here is some example how to use it
-```ruby
-def some_controller_method_name
-  # Some other code ...
-
-  if DeviseRoles.user_not('admin', current_user)
-    # User is NOT **admin** !!!
-  end
-
-  # Some other code ...
+if DeviseRoles.user_not('admin', current_user)
+  # User is NOT **admin** !!!
 end
+```
+
+#### add_role_to_user
+If you want quickly add specific role to user, like in the example
+```ruby
+DeviseRoles.add_role_to_user(Role.where(:name => 'banned')[0], current_user)
 ```
 
 ## License

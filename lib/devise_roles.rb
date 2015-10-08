@@ -11,4 +11,8 @@ module DeviseRoles
     return current_user.role.name != user_role_name
   end
 
+  def self.add_role_to_user(role, user)
+    user.role = role
+  end
+
 end
