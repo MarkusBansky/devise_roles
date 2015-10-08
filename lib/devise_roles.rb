@@ -6,4 +6,6 @@ module DeviseRoles
       redirect_to admin_path, alert: "You should be #{user_role_name} to view that page!"
     end
   end
+
+  
 end
