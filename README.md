@@ -1,7 +1,8 @@
 # DeviseRoles::Gem
 [![Gem Version](https://badge.fury.io/rb/devise_roles.svg)](https://badge.fury.io/rb/devise_roles)
-
 [![Build Status](https://travis-ci.org/MarkusBansky/devise_roles.svg?branch=master)](https://travis-ci.org/MarkusBansky/devise_roles)
+[![Code Climate](https://codeclimate.com/github/MarkusBansky/devise_roles/badges/gpa.svg)](https://codeclimate.com/github/MarkusBansky/devise_roles)
+[![Test Coverage](https://codeclimate.com/github/MarkusBansky/devise_roles/badges/coverage.svg)](https://codeclimate.com/github/MarkusBansky/devise_roles/coverage)
 
 Gem that helps you to organaize your users with roles and manipulate them.
 
