@@ -6,3 +6,5 @@ gemspec
 group :development do
   gem 'test-unit'
 end
+
+gem "codeclimate-test-reporter", group: :test, require: nil
