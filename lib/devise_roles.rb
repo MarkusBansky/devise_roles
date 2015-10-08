@@ -7,5 +7,5 @@ module DeviseRoles
     end
   end
 
-  
+
 end

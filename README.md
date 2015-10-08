@@ -22,9 +22,24 @@ Or install it yourself as:
 
     $ gem install devise_roles
 
+Also you need to include it in your Application
+
+In your **application.rb** add This
+```ruby
+    require 'encryption/encryption'
+```
+and inside Application block
+```ruby
+config.autoload_paths += %W(#{config.root}/lib)
+```
+
 ## Usage
 
 To use this gem features, you should create table **Roles** and add roles to it.
+
+Generate User model if you haven't yet:
+
+    $ rails generate devise User
 
 ### Set up Role and User models
 
@@ -65,20 +80,20 @@ And this is all for setting up.
 
 Now you can go to learn methods for this *gem*.
 
-## DeviseRoles methods
+## Devise Roles methods
 
 #### Enable only for Role
 
 If you want to enable some page for exact Role only, use this method
 ```ruby
-    available_for_user_role(user_role_name, user_redirect_path)
+    DeviseRoles.available_for_user_role(user_role_name, user_redirect_path)
 ```
 Here is some example how to use it
 ```ruby
 def some_controller_method_name
   # Implement it at the top
   # In this example, current view would be available for admins only
-  available_for_user_role('admin', root_path)
+  DeviseRoles.available_for_user_role('admin', root_path)
 
   # Some other code ...
   # That would be run if user is not **admin**
