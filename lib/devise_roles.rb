@@ -1,0 +1,2 @@
+module DeviseRoles
+end
