@@ -36,44 +36,11 @@ Generate User model if you haven't yet:
 
     $ rails generate devise User
 
-### Set up Role and User models
 
-To do so, run:
+To set up **Roles** follow tutorial
+from official [DeviseRoles page here](https://github.com/plataformatec/devise/wiki/How-To:-Add-a-default-role-to-a-User).
 
-    $ rails g model Role name:string
-    $ rails g migration addRoleIdToUser role:references
-    $ rake db:migrate
-
-Then in your app's models:
-
-```ruby
-class User < ActiveRecord::Base
-  belongs_to :role
-end
-```
-for **User** model and also
-```ruby
-class Role < ActiveRecord::Base
-  has_many :users
-end
-```
-for **Role** model.
-
-### Set up seeds.rb with roles and add to db
-
-```ruby
-['registered', 'banned', 'moderator', 'admin'].each do |role|
-  Role.find_or_create_by({name: role})
-end
-```
-These are required, you can also add your custom roles on your own.
-Then you must add them to *db*
-
-    $ rake db:seed
-
-And this is all for setting up.
-
-Now you can go to learn methods for this *gem*.
+And this is all for setting up. Now you can go to learn methods for this *gem*.
 
 ## DeviseRoles Usage
 
