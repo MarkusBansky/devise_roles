@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Gem that helps you to organaize your users with roles and manipulate them. Visit HOMEPAGE for more information how to use this gem.}
   spec.homepage      = "https://github.com/MarkusBansky/devise_roles"
   spec.license       = "MIT"
-  
+
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
@@ -28,7 +28,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'test_declarative', '>=0.0.2'
   spec.add_development_dependency 'mocha', '>=0.14'
   spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'coveralls'
   spec.add_development_dependency "bundler", "~> 1.10"
 
   spec.required_rubygems_version = '>= 1.3.6'
