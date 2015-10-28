@@ -15,7 +15,9 @@ module DeviseRoles
     end
 
     # Generator Code. Remember this is just suped-up Thor so methods are executed in order
-
+    def copy_initializer_file
+      copy_file "devise_roles_initializer.rb", "config/initializers/#{file_name}.rb"
+    end
 
   end
 end
